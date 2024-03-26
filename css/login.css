@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500; 1.700;1.900&display=swap');
+/* remove as configuração padrao do meu site  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+:root{
+    --cor-h1-esquerdo:#1df18e;
+    --cor-h1-direito:#00ff88;
+    --cor-fundo:#170744;
+    --cor-input:#281952;
+    --cor-sombra:#000000;
+    --cor-btn:#00ff62;
+    
+}
+
+.login{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+    justify-content: center;
+    align-items: center;
+}
+.login_esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    flex-direction: column;
+}
+.login_esquerda > h1{
+    color:var(--cor-h1-esquerdo);
+}
+.img-esquerda{
+    width: 35vw;
+}
+.login_direita{ 
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    flex-direction: column;
+}
+
+
+
+.login_card{
+    width: 60%;
+    display: flex;     
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px  35px;
+    background-color: #f5f5f5 (249, 239, 255);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #110c09;
+    background-color: #231c36;
+}
+.login_card > h1{
+    color: var(--cor-h1-direito);
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+}
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 10px 0px;
+    background-color: var(--cor-input);
+    color: aliceblue;
+    font-size: 12pt;
+    box-shadow: 0px 0px 40px var(--cor-sombra);
+}
+.textfield > label{
+    color: cornsilk;
+    margin-bottom: 0px 8px;
+}
+.btn-login{
+    background-color: var(--cor-btn);
+    border: none;
+    color: #120720;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 8px 0px;
+    outline: none;
+    padding: 16px;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
